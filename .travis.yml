@@ -5,10 +5,10 @@ services:
 
 # TAG can be anything (used inside docker. MYTAG also works)
 before_install:
-  - docker build -t dbeken85/docker-react -f Dockerfile.dev .
+  - docker build -t dbeken1985/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true dbeken85/docker-react npm run test
+  - docker run -e CI=true dbeken1985/docker-react npm run test
 
 deploy:
   provider: elasticbeanstalk
